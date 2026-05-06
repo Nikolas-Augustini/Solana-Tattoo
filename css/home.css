@@ -1,0 +1,98 @@
+body {
+    background-image: url("../images/image.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Noto Serif KR', serif;
+    color: white;
+}
+
+.main-logo {
+    display: block;
+    margin: 2rem auto;
+    width: 180px;
+}
+
+main {
+    position: absolute;
+    bottom: 5rem;
+    left: 4rem;
+}
+
+main h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(3rem, 3vw + 4rem, 7rem);
+    line-height: 0.9;
+    color: white;
+}
+
+.indent {
+    padding-left: 3rem;
+    display: inline-block;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 45px;
+    height: auto;
+    display: block;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -500px;
+    width: 300px;
+    height: 100vh;
+    background: black;
+    padding: 2rem;
+    transition: right .4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 2px solid white;
+}
+
+.side-menu.open {
+    right: 0;
+}
+
+
+.menu-logo {
+    width: 150px;
+    display: block;
+    margin: 0 auto 2rem auto;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.side-menu li {
+    margin: 1.5rem 0;
+}
+
+.side-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.contact {
+    font-size: 1rem;
+    text-align: center;
+    opacity: 0.8;
+    padding-bottom: 3rem;
+}
