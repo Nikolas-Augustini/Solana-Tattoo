@@ -1,11 +1,12 @@
 const container = document.getElementById('scrollImages');
 
 const folder = container.dataset.folder;
+const prefix = container.dataset.prefix;
 
 const imageCount = 7;
 
 const images = Array.from({ length: imageCount }, (_, i) => 
-    `${folder}/tat${i + 1}.png`
+    `${folder}/${prefix}${i + 1}.png`
 );
 
 images.forEach(src => {
