@@ -92,3 +92,14 @@ body {
     opacity: 0.8;
     padding-bottom: 3rem;
 }
+
+.booking-form{
+    background-color:white;
+    color: black;
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic;
+}
+
+h2{
+    text-align: center;
+}
