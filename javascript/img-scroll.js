@@ -1,14 +1,13 @@
 const container = document.getElementById('scrollImages');
 
-const images = [
-    'images/tattoos/tat1.png',
-    'images/tattoos/tat2.png',
-    'images/tattoos/tat3.png',
-    'images/tattoos/tat4.png',
-    'images/tattoos/tat5.png',
-    'images/tattoos/tat6.png',
-    'images/tattoos/tat7.png'
-];
+const folder = container.dataset.folder;
+const prefix = container.dataset.prefix;
+
+const imageCount = 7;
+
+const images = Array.from({ length: imageCount }, (_, i) => 
+    `${folder}/${prefix}${i + 1}.png`
+);
 
 images.forEach(src => {
     const img = document.createElement('img');
@@ -29,3 +28,4 @@ function autoScroll() {
 }
 
 autoScroll();
+
